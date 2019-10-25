@@ -1,0 +1,376 @@
+<robot
+  name="191021MR5.SLDASM">
+  <link
+    name="Base_Link">
+    <inertial>
+      <origin
+        xyz="2.2716E-05 1.4182E-08 0.0058667"
+        rpy="0 0 0" />
+      <mass
+        value="0.13935" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://191021MR5.SLDASM/meshes/Base_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://191021MR5.SLDASM/meshes/Base_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link1">
+    <inertial>
+      <origin
+        xyz="-2.2065E-06 -0.010425 0.047723"
+        rpy="0 0 0" />
+      <mass
+        value="0.82213" />
+      <inertia
+        ixx="0.0012698"
+        ixy="-1.3651E-08"
+        ixz="9.1896E-09"
+        iyy="0.0011703"
+        iyz="-6.1121E-05"
+        izz="9.9506E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://191021MR5.SLDASM/meshes/Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://191021MR5.SLDASM/meshes/Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint1"
+    type="revolute">
+    <origin
+      xyz="-0.00041285 0 0.027"
+      rpy="0 0 0" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="Link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link2">
+    <inertial>
+      <origin
+        xyz="1.2982E-06 -0.051969 0.15827"
+        rpy="0 0 0" />
+      <mass
+        value="1.6841" />
+      <inertia
+        ixx="0.04641"
+        ixy="8.0107E-08"
+        ixz="1.535E-07"
+        iyy="0.0448"
+        iyz="0.00067411"
+        izz="0.0016102" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://191021MR5.SLDASM/meshes/Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://191021MR5.SLDASM/meshes/Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint2"
+    type="revolute">
+    <origin
+      xyz="0 -0.091885 0.06"
+      rpy="0 0 0" />
+    <parent
+      link="Link1" />
+    <child
+      link="Link2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link3">
+    <inertial>
+      <origin
+        xyz="3.32536143180385E-07 0.0615729531368279 0.155533058771834"
+        rpy="0 0 0" />
+      <mass
+        value="0.98230112631782" />
+      <inertia
+        ixx="0.0189819550362105"
+        ixy="3.10240510672774E-08"
+        ixz="1.71022764085144E-07"
+        iyy="0.0188226520390792"
+        iyz="-0.000117796335989016"
+        izz="0.000159303021328198" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://191021MR5.SLDASM/meshes/Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://191021MR5.SLDASM/meshes/Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint3"
+    type="revolute">
+    <origin
+      xyz="0 -0.0065 0.38388"
+      rpy="0 0 0" />
+    <parent
+      link="Link2" />
+    <child
+      link="Link3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link4">
+    <inertial>
+      <origin
+        xyz="5.79292420657142E-07 -0.0470319002859306 0.00891972870701374"
+        rpy="0 0 0" />
+      <mass
+        value="0.23644132750411" />
+      <inertia
+        ixx="0.000147037590267084"
+        ixy="8.03652582512052E-09"
+        ixz="2.48900088533533E-08"
+        iyy="0.000136894555463898"
+        iyz="-6.35149193323197E-06"
+        izz="1.01430537193422E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://191021MR5.SLDASM/meshes/Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://191021MR5.SLDASM/meshes/Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint4"
+    type="revolute">
+    <origin
+      xyz="0 0.02 0.3765"
+      rpy="0 0 0" />
+    <parent
+      link="Link3" />
+    <child
+      link="Link4" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link5">
+    <inertial>
+      <origin
+        xyz="-5.79292558179406E-07 -0.00891972870701405 0.0470319002859311"
+        rpy="0 0 0" />
+      <mass
+        value="0.236441327504109" />
+      <inertia
+        ixx="0.000147037590267086"
+        ixy="2.48900087540034E-08"
+        ixz="8.0365258207577E-09"
+        iyy="1.01430537193419E-05"
+        iyz="-6.35149193323599E-06"
+        izz="0.0001368945554639" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://191021MR5.SLDASM/meshes/Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://191021MR5.SLDASM/meshes/Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint5"
+    type="revolute">
+    <origin
+      xyz="0 -0.052500000000007 0.0477499999457901"
+      rpy="0 0 0" />
+    <parent
+      link="Link4" />
+    <child
+      link="Link5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Gripper">
+    <inertial>
+      <origin
+        xyz="-8.16087745465083E-07 -0.103592357705251 0.00378110908229212"
+        rpy="0 0 0" />
+      <mass
+        value="0.615509551415261" />
+      <inertia
+        ixx="0.00356137129682163"
+        ixy="-5.24952668709655E-07"
+        ixz="9.17336024605919E-06"
+        iyy="0.000881606494233563"
+        iyz="-0.000414706577528412"
+        izz="0.00387514661031009" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://191021MR5.SLDASM/meshes/Gripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://191021MR5.SLDASM/meshes/Gripper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint6"
+    type="revolute">
+    <origin
+      xyz="0 -0.04775 0.0525"
+      rpy="0 0 0" />
+    <parent
+      link="Link5" />
+    <child
+      link="Gripper" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
