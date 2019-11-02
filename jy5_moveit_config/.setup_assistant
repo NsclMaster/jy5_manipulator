@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: jy5_description
+    relative_path: urdf/jy5_v5a.urdf
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/jy5_v5a.srdf
+  CONFIG:
+    author_name: nscl1016
+    author_email: nscl1016@gmail.com
+    generated_timestamp: 1572584139

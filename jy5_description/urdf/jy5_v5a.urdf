@@ -1,12 +1,10 @@
 <robot name="jy5_v5a">
-  <link
-    name="Base_Link">
+  <link name="Base_Link">
     <inertial>
       <origin
         xyz="2.2716E-05 1.4182E-08 0.0058667"
         rpy="0 0 0" />
-      <mass
-        value="0.13935" />
+      <mass value="0.13935" />
       <inertia
         ixx="0"
         ixy="0"
@@ -20,13 +18,10 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="package://jy5_description/meshes/Base_Link.STL" />
+        <mesh filename="package://jy5_description/meshes/Base_Link.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.75294 0.75294 0.75294 1" />
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
       </material>
     </visual>
     <collision>
@@ -34,13 +29,11 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="package://jy5_description/meshes/Base_Link.STL" />
+        <mesh filename="package://jy5_description/meshes/Base_Link.STL" />
       </geometry>
     </collision>
   </link>
-  <link
-    name="Link1">
+  <link name="Link1">
     <inertial>
       <origin
         xyz="-2.2065E-06 -0.010425 0.047723"
